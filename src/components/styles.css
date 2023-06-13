@@ -1,0 +1,425 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+  /* Estilos del formulario */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .wrapper {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 400px;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .title span {
+    color: var(--primary-color);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .row i {
+    margin-right: 10px;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"] {
+    border: none;
+    border-bottom: 2px solid #fcf812; 
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+  }
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus {
+    outline: none;
+    border-bottom: 2px solid #f5461a;
+  }
+  .pass {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  .pass a {
+    color: #f5461a;
+    text-decoration: none;
+  }
+  .button {
+    margin-top: 20px;
+  }
+  input[type="submit"] {
+    background-color: #e10316;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+  }
+  input[type="submit"]:hover {
+    background-color: #f5461a;
+  }
+  .signup-link {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .signup-link a {
+    color: #f5461a;
+    text-decoration: none;
+  }
+/* Header Styles */
+header {
+  background-image: url(https://cdn.steamstatic.com/steamcommunity/public/images/items/997070/6704338131eac5f8ab62a23153e5d5c8712393b1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #9e2323, #e10316);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.nav-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e10316;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #b80f0f;
+}
+
+/* Comics Section Styles */
+section.comics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.comic {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.comic img {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.about {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Optional: Set a maximum width to limit the width of the section */
+}
+
+.about h2 {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.about p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+
+/* Get in Touch Section Styles */
+section.contact {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+section.contact h2 {
+  margin-top: 0;
+}
+
+section.contact form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+section.contact label {
+  font-weight: bold;
+}
+
+section.contact input,
+section.contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+section.contact input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+section.contact input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+/*listadevista styles*/
+/* Comic list styles */
+.vista {
+  list-style-type: none;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.vista li {
+  margin: 20px;
+  text-align: center;
+}
+
+.vista img {
+  max-width: 200px;
+  height: auto;
+}
+
+.vista li img {
+  display: block;
+  margin-bottom: 10px;
+}
+/*perfil*/
+body#perfil {
+  background-color: #b80f0f;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  margin: 5px;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  background-color: #333;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
+
+.profile-image {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 20px;
+}
+.container {
+  padding: 20px;
+}
+.custom-modal {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  text-align: center;
+}
+
+.custom-modal button {
+  background-color: #b80f0f;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+/* Comic Details Styles */
+
+.custom-modal button:hover {
+  background-color: #005b9f;
+}
+
+.comic-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.comic-details-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  background-color: #f7f7f7;
+}
+
+.comic-details-content h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background-color: #000000;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.comic-details-content p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.comic-details-content button {
+  font-size: 24px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 10px;
+  background-color: #b80f0f;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comic-details-content button:hover {
+  background-color: #005ea8;
+}
+
+.comic-details-content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.comic-details-content .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.comic-details-content .info label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.comic-details-content .info span {
+  font-size: 18px;
+  color: #555;
+}
